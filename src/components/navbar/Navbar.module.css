@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+
+  .logoImage {
+    display: block;
+    width: auto;
+  }
+  
+  .logoAndText {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  
+  .homeButton, .logoutButton {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .homeText, .logoutButton {
+    transition: color 0.3s ease;
+  }
+  
+  .homeButton:hover .homeText, .logoutButton:hover {
+    color: #F0B529;
+  }
+  
+  .logoutButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
