@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BrainWave",
-  description: "Infinite Trivia Questions",
+  title: "Portfolio Management",
+  description: "Create easy professional presentations",
   icons: {
     icon: '/images/favicon.ico'
   }

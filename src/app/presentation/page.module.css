@@ -1,0 +1,35 @@
+/* page.module.css */
+
+.headerContainer {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light grey background to subtly highlight the title area */
+  border-bottom: 1px solid #ccc; /* Adds a subtle division from the rest of the page */
+}
+
+.title {
+  font-size: 24px; /* Prominent size for clear visibility */
+  color: var(--primary-color); /* Consistent color theme with your navbar */
+  text-align: center; /* Centers the title for better focus */
+}
+
+
+
+/* spinner */
+.spinner {
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-left-color: rgb(255, 255, 255);
+    animation: spin 1s ease infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

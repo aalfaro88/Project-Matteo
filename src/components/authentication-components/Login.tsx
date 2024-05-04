@@ -17,7 +17,7 @@ export default function Login() {
 
   // Component uses the `use client` directive to ensure it's treated as a Client Component
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className={styles.container}>
       <div className={styles.logincontainer}>
 
         <label className={styles.label}>Email:</label>

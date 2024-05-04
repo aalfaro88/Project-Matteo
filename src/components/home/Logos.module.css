@@ -1,51 +1,14 @@
 .topcontainer {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .logo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-    align-items: center;
-    max-width: 100%; 
-  }
-  
-  .logoImage {
-    width: 100%; 
-    height: auto;
-    max-width: 150px;  /* Smaller max-width for the logo image */
-  }
-  
-  .logoTitle {
-    width: 100%; 
-    height: auto;
-    max-width: 350px;  /* Larger max-width for the logo title */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
 
-  @media (max-width: 768px) {
-    .logoImage {
-      max-width: 120px;
-      height: auto;
-    } 
-    .logoTitle {
-      max-width: 180px;
-      height: auto;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .logoImage {
-      max-width: 100px;
-      height: auto;
-    }
-    .logoTitle {
-      max-width: 150px;
-      height: auto;
-    }
-  }
-  
+.title {
+  font-size: 72px; /* Very large font size */
+  font-family: 'Arial', sans-serif; /* Font family */
+  color: #333; /* Dark grey color */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Subtle text shadow for depth */
+  margin: 0; /* Removes default margin */
+}

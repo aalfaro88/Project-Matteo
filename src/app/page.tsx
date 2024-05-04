@@ -6,7 +6,7 @@ import Navbar from '@/components/navbar/Navbar';
 import Logos from '@/components/home/Logos';
 import { getUser } from '@/utils/auth';
 import Login from '../components/authentication-components/Login';
-import StartGame from '../components/home/StartGame'
+import StartGame from '../components/home/MainMenu'
 
 const HomePage: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);

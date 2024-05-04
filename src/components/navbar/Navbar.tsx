@@ -22,14 +22,6 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <Link href="/" className={styles.homeButton}>
         <span className={styles.logoAndText}>
-          <Image
-            src="/images/logo-image-1.png"
-            alt="Logo Image"
-            width={50} 
-            height={30}
-            priority
-            className={styles.logoImage}
-          />
           <span className={styles.homeText}>Home</span>
         </span>
       </Link>

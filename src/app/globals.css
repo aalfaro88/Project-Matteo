@@ -1,3 +1,52 @@
-* {
-    background-color: #4B68AB;
-  }
+/* Global styles.css */
+
+:root {
+  --primary-color: #0056b3; /* A strong blue */
+  --secondary-color: #00356e; /* A vibrant green */
+  --background-color: #ffffff; /* Pure white background */
+  --text-color: #333333; /* Dark gray for text for better readability */
+  --footer-background: #f2f2f2; /* Light gray for footer or less important areas */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+footer {
+  background-color: var(--footer-background);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Additional styles can be added as needed */

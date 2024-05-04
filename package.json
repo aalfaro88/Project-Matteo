@@ -11,11 +11,14 @@
   "dependencies": {
     "@aws-amplify/auth": "^6.2.1",
     "@aws-amplify/core": "^6.0.28",
+    "fabric": "^5.3.0",
+    "jspdf": "^2.5.1",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/fabric": "^5.3.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

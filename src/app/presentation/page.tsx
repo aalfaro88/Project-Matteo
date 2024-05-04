@@ -1,11 +1,12 @@
-// game/page.tsx
+// presentation/page.tsx
 'use client'
 import React, { useEffect, useState } from 'react';
 import Navbar from "@/components/navbar/Navbar";
+import Canvas from '@/components/presentation/Canvas';
 import { getUser } from '@/utils/auth';
-import styles from './page.module.css'; // Ensure you have this CSS module
+import styles from './page.module.css'; 
 
-const GamePage = () => {
+const PresentationPage = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -35,9 +36,13 @@ const GamePage = () => {
   return (
     <div>
       <Navbar />
-      <h1>Welcome to Game Page</h1>
+      <div className={styles.headerContainer}>
+        <h1 className={styles.title}>Create Your Presentation</h1>
+      </div>
+      <div>
+        <Canvas />
+      </div>
     </div>
   );
 };
-
-export default GamePage;
+export default PresentationPage;

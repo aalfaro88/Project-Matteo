@@ -1,44 +1,49 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
+/* Navbar.module.css */
 
-  .logoImage {
-    display: block;
-    width: auto;
-  }
-  
-  .logoAndText {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-  }
-  
-  
-  .homeButton, .logoutButton {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .homeText, .logoutButton {
-    transition: color 0.3s ease;
-  }
-  
-  .homeButton:hover .homeText, .logoutButton:hover {
-    color: #F0B529;
-  }
-  
-  .logoutButton {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-  }
-  
+.navbar {
+  background-color: white; /* Same as the login container */
+  padding: 10px 20px; /* Adequate padding for the navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  align-items: center; /* Align items in the nav bar vertically */
+  justify-content: space-between; /* Space between home and logout */
+  border-bottom: 1px solid #ccc; /* Subtle border to define the navbar from the content */
+}
+
+.homeButton {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove underline from links */
+  color: var(--primary-color); /* Use the primary color variable for text */
+  cursor: pointer;
+}
+
+.homeButton:hover,
+.logoutButton:hover {
+  text-decoration: underline; /* Simple underline hover effect */
+}
+
+.homeText {
+  margin-left: 8px; /* Space between icon and text */
+  font-size: 16px;
+}
+
+.logoAndText {
+  display: flex;
+  align-items: center; /* Center logo and text vertically */
+}
+
+.logoutButton {
+  background-color: var(--primary-color); /* Primary color for the button */
+  color: white; /* White text for contrast */
+  border: none; /* No border for a cleaner look */
+  padding: 8px 16px;
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px;
+  cursor: pointer; /* Cursor pointer to indicate it's clickable */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.logoutButton:hover {
+  background-color: rgb(0, 41, 85);
+}

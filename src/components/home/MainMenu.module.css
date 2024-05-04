@@ -1,0 +1,32 @@
+/* MainMenu.module.css */
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    padding: 20px 0; /* Adds padding to the top and bottom for some spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow beneath the menu for depth */
+    position: relative;
+  }
+  
+  .button {
+    background-color: var(--primary-color); /* Use the primary color from your variables */
+    color: white; /* White text for contrast */
+    font-size: 18px; /* Slightly larger font size for legibility */
+    border: none; /* No border for a cleaner look */
+    padding: 15px 50px; /* Increased padding for a wider appearance */
+    border-radius: 5px; /* Slightly rounded corners for a modern look */
+    cursor: pointer; /* Cursor pointer to indicate it's clickable */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for visual feedback */
+  }
+  
+  .button:hover {
+    background-color: #004a9f; /* A manually chosen darker shade of blue */
+    transform: scale(1.03); /* Slightly enlarge the button on hover */
+  }
+  
+  
+  .button:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4), 0 0 0 4px var(--primary-color); /* Custom focus style */
+  }
+  

@@ -1,112 +1,91 @@
+/* Login.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logincontainer {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* This affects the alignment of all children; you might want to change it if everything should be centered */
+}
+
 .label {
-    align-self: flex-start;
-    color: #F5F5F5; /* Sets the label color */
-    margin-bottom: 1px;
-    margin-top: 25px
-  }
-  
-  .input {
-      background-color: #F5F5F5;
-      border: none;
-      border-radius: 30px; 
-      padding: 10px 20px;
-      margin-top: 3px;
-      height: 35px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    
-    .logincontainer {
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; 
-      padding: 20px;
-      max-width: 280px;
-      width: 100%;
-      margin: auto;
-    }
-    
-    .forgotPassword {
-      color: #A4B1CE;
-      align-self: flex-end;
-      font-size: .8rem;
-      margin-top: 5px;
-    }
-    
-    .logInButton {
-      background-color: #F0B529;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 30px;
-      padding: 10px 20px;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      cursor: pointer;
-      max-width: 100%;
-      width: 60%;
-    }
-    
-    .orLoginWith {
-      text-align: center;
-      color: #f5f5f5; /* Adjust the color as needed */
-      margin-top: 40px; /* Spacing from the log in button */
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 0.9em; /* Smaller font size */
-    }
-    
-    .socialNetworkContainer {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-    }
-    
-    .socialNetworkButton {
-      padding: 10px;
-      cursor: pointer; /* If they are clickable */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .socialNetworkButton {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      margin: 5px;
-      background-color: #f5f5f5; /* Background color for the buttons */
-      border-radius: 30px; /* Rounded corners */
-      width: 50px;
-      height: 25px;
-    }
-    
-    .socialNetworkButton img {
-      background-color: transparent;
-    }
-    
-    
-    
-    @media (max-width: 768px) {
-      .logoImage {
-        max-width: 128px;
-      } 
-      .logoTitle {
-        max-width: 300px;  /* Adjusted for smaller screens */
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .logoImage {
-        max-width: 90px; ;
-      }
-      .logoTitle {
-        max-width: 250px;  /* Further reduced for very small screens */
-      }
-    }
-    
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.forgotPassword {
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.logInButton {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logInButton:hover {
+  background-color: rgb(0, 41, 85);
+}
+
+.orLoginWith {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+  text-align: center; /* Center the text horizontally */
+}
+
+.socialNetworkContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center the social buttons horizontally */
+}
+
+.socialNetworkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.socialNetworkButton:hover {
+  background: #f0f0f0;
+}
